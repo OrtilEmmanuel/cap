@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="formulary.css">
+    <script src="https://kit.fontawesome.com/3c8a93f4d3.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+        
+    <nav>
+
+        <ul>
+         <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+         <li><a href="galerie.html"><i class="fas fa-images"></i> Gallery</a></li>
+         <li><a href="contact.html"><i class="fas fa-id-card"></i> Contact</a></li>
+         <li><a href="formulary.html"><i class="fas fa-clipboard-list"></i> Réservation</a></li>
+      </ul>
+ </nav>
+    <h2>Formulaire de voyage</h2>
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+                <form action="/action_page.php">
+                    <div class="row">
+                        <div class="col-58">          
+                            <h3>Adresse</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Nom Complet</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Emmanuel ORTIL"> 
+
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="email" placeholder="emmah@example.com"> 
+
+                            <label for="adr"><i class="fa fa-address-card"></i> Adresse</label>
+                            <input type="text" id="adr" name="address" placeholder="452 W. 15th street">
+                        
+                                    <label for="city"><i class="fas fa-university"></i> Ville de Destination</label>
+                                    <input type="text" id="city" placeholder="limbé">
+                             
+                                    <div class="row">
+                                    <div class="col-50">
+                                       <label id="country">Pays d'origine</label>
+                                       <select>
+                                        <optgroup label="Amerique du nord">
+                                        <option>Cuba</option>
+                                       <option>USA</option>
+                                       <option>Canada</option>
+                                       <option>Mexique</option>
+                                       <option>Costa Rica</option>
+                                    </optgroup>
+                                    <optgroup label="Europe">
+                                        <option>France</option>
+                                        <option>Italie</option>
+                                        <option>Espagne</option>
+                                    </optgroup>
+                                    <optgroup label="Asie">
+                                        <option>Japon</option>
+                                        <option>Chine</option>
+                                    </optgroup>
+                                    </select>      
+
+                                </div>
+                                     <div class="col-50">
+                                         <label id="state">code Zip</label>
+                                         <input type="text" name="zip" placeholder="10001">
+                                     </div>
+                            </div>
+                        </div>
+                        <div class="col-50">
+                            <h3>Paiement</h3>
+                            <label for="fname">Accepted Card</label>
+                            <div class="icon-container">
+                                <i class="fab fa-cc-paypal" style="color:navy;"></i>
+                                <i class="fab fa-cc-amex" style="color:blue;"></i>
+                                <i class="fab fa-cc-mastercard" style="color:red;"></i>
+                                <i class="fab fa-cc-discover" style="color:orange;"></i>
+                            </div>
+                            <label for="cname">Name on card</label>
+                            <input type="text" id="cname" name="cardnumber" placeholder="EMMANUEL ORTIL">
+                             
+                            <label for="ccnum">credit card</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+
+                            <label for="expmonth">Exp Month</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="Septembre ">
+                            <div class="row">
+                                <div class="col-50">
+                                   <label for="expyear">Exp Year</label>
+                                   <input type="text" id="expyear" name="expyear" placeholder="2020">
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="532">   
+                                </div>
+                            </div>
+                        </div>
+                        <label><input type="checkbox" checked="checked" name="sameadr">Vous avez des Bagages</label>
+                            <input type="submit" value="Envoyez" class="btn">
+                       
+                        
+                        </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="col-25">
+            <div class="container">
+                <h4>Prix de Voyage <span class="price"><i class="fas fa-bus-alt"  style="color:rgb(252, 252, 252);"></i></span></h4>
+                <p>USA<span class="price">$1500</span></p>
+                <p>REP.DOMINICAINE<span class="price">$1000</span></p>
+                <p>PORT-AU-PRINCE<span class="price">$500</span></p>
+                <p>GONAIVES<span class="price">$500</span></p>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="contact.css">
+    
+</head>
+<body>
+        <nav>
+
+        <ul>
+         <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+         <li><a href="galerie.html"><i class="fas fa-images"></i> Gallery</a></li>
+         <li><a href="contact.html"><i class="fas fa-id-card"></i> Contact</a></li>
+         <li><a href="formulary.html"><i class="fas fa-clipboard-list"></i> Réservation</a></li>
+      </ul>
+ </nav>
+    <div class="regform"><h1>Nous contacter</h1></div>
+    <div class="main">
+        <form>
+            <div id="name">
+                <h2 class="name">Votre Nom *</h2>
+                <input class="firstname"type="text" name="first_name" required><br>
+                <label class="firstlabel">Prénom </label>
+
+                <input class="lastname"type="text" name="last_name" required><br>
+                <label class="lastlabel">Nom</label>
+            </div>
+                <h2 class="name">Compagnie</h2>
+                <input class="company" type="text" name="company">
+
+                <h2 class="name">Email *</h2>
+                <input class="email" type="text" name="email" required>
+
+                <h2 class="name">Telephone</h2>
+                <input class="code" type="text"name="area_code">
+                <label class="area_code">indicatif régional</label>
+                <input class="number" type="text"name="phone">
+                <label class="phone-number">numéro Tel</label>
+
+                <h2 class="name">Sujet *</h2>
+                <select class="option"name="subject">
+                    <option disabled="disabled" selected="selected">----faire votre choix</option>
+                    <option>sujet 1</option>
+                    <option>sujet 2</option>
+                    <option>sujet 3</option>
+                </select>
+
+                <h2 id="student">Etes-vous Haitien?</h2>
+                <label class="radio">
+
+                    <input class="radio-one"type="radio" checked="checked"name="">
+                    <span class="checkmark"></span>
+                    Oui
+                </label>
+
+                <label class="radio">
+
+                    <input class="radio-two"type="radio"name="">
+                    <span class="checkmark"></span>
+                    Non
+                </label>
+                <button type="submit">Envoyer</button>
+             
+        </form>
+    </div>
+</body>
+</html>
